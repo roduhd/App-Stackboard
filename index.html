@@ -8,6 +8,9 @@
 </head>
 <body>
     <button class="boutonVisible" onclick="nouveauProjetFormulaireVisible()">Ajouter un projet</button>
+    <button onclick="resetProjets()">Détruire les projets</button>
+
+    <div id="formulaireContainer" style="display: none;"></div>
     <table class="nouveauProjetFormulaire">
         <thead>
             <tr>
@@ -19,13 +22,13 @@
                 <th>Type de projet</th>
                 <th>Maj à faire</th>
                 <th>Statut</th>
+                <th>Url</th>
         </thead>
     </table>
     <table>
         <caption>Stack utilisés dans les projets</caption>
         <thead>
             <tr>
-                <th>Modifier</th>
                 <th>Nom</th>
                 <th>Stack</th>
                 <th>Description</th>
@@ -34,18 +37,11 @@
                 <th>Type de projet</th>
                 <th>Maj à faire</th>
                 <th>Statut</th>
+                <th>Url</th>
             </tr>
         </thead>
         <tbody>
-            <td><button>Modifier</button></td>
-            <td>Banque App</td>
-            <td>Angular, Node.js, MongoDB</td>
-            <td>Application de gestion bancaire</td>
-            <td>2024-03-01</td>
-            <td>2024-04-15</td>
-            <td>Web App</td>
-            <td>Oui</td>
-            <td>En cours</td>        </tbody>
+        </tbody>
     </table>
 </body>
 <script src="index.js"></script>
